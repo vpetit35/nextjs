@@ -1,4 +1,8 @@
-module.exports = (req, res) => {
-  const { name = 'World' } = req.query
-  res.status(200).send(`Hello ${name}!`)
+module.exports = (request, response) => {
+  res.json({
+    body: req.body,
+    query: req.query,
+    cookies: req.cookies
+  })
+  res.statusCode = 200
 }
