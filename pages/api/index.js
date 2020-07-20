@@ -1,6 +1,6 @@
 const request = require('request');
 module.exports = (req, res) => {
-  request.post(req.response_url, {
+  request.post(req.body.response_url, {
 	  json: {
 		  text: 'ok pour mep!'
 		}
