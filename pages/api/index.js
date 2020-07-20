@@ -1,8 +1,8 @@
 const request = require('request');
 module.exports = (req, res) => {
-  request.post(response_url, {
+  request.post(req.response_url, {
 	  json: {
-		  text: 'ok'
+		  text: 'ok pour mep!'
 		}
 	}, (error, res, body) => {
   if (error) {
